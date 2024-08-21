@@ -7,15 +7,20 @@ import { AppComponent } from './app.component';
 import { HeroeComponent } from './heroes/heroe/heroe.component';
 import { ListComponent } from './heroes/list/list.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { MainPageComponent } from './dbz/pages/main-page.component';
+import { DbzModule } from './dbz/dbz.module';
+import { LoginComponent } from './impulso/components/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     ContadorModule,
     HeroesModule,
+    DbzModule,
     AppRoutingModule
   ],
   providers: [],
